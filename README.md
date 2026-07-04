@@ -1,6 +1,6 @@
 # i2c_bare_metal
 
-Bare-metal I2C master driver for Raspberry Pi 4 (BCM2711). Accesses the BSC1 peripheral directly via `/dev/mem` — no Linux kernel I2C subsystem involved. Implements a three-layer HAL, a CRC-8 command/response protocol with an Arduino Leonardo slave, and an ADXL345 accelerometer driver.
+Bare-metal I2C master driver for Raspberry Pi 4 (BCM2711). Accesses the BSC1 peripheral directly via `/dev/mem`, no Linux kernel I2C subsystem involved. Implements a three-layer HAL, a CRC-8 command/response protocol with an Arduino Leonardo slave, and an ADXL345 accelerometer driver.
 
 The kernel I2C driver must be disabled to avoid register conflicts:
 ```
